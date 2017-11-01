@@ -1,7 +1,7 @@
 <?php
 
-$secretKey = 'enter your secret key';
-$publicKey = 'enter your public key';
+$secretKey = 'ZTkzOTQ2M2I2ODI0NGM0NTk2ODg2OTJiOGRmMTk1YTllMTNkNjNiMjlmM2Q0MzMyODk2NjZlMmM2OTQxMjlhZg';
+$publicKey = 'MTNmMmQzYjlkYjYxNDI5ZTlhZjY1M2RmZTEwOTI1MDk';
 $timestamp = time();
 $payload = $timestamp . '.' . $publicKey;
 $hash = hash_hmac('sha256', $payload, $secretKey, true);
